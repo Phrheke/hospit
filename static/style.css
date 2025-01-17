@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 14px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+#results ul {
+    list-style: none;
+    padding: 0;
+}
+
+#results ul li {
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#results ul li:hover {
+    background-color: #ddd;
+}
+/* Styles for the map container */
+/* Styles for the map container */
+#map {
+    width: 70%; /* Map width */
+    height: 400px; /* Map height */
+    margin: 0 auto; /* Center it */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure it doesn't overlap other elements */
+}
+
+/* Adjust container to prevent overflow */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* Style for hospital info bubble */
+.hospital-info-bubble {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hospital-info-bubble h3 {
+    font-size: 16px;
+    color: #0055a5;
+    margin-bottom: 5px;
+}
+
+.hospital-info-bubble p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.hospital-info-bubble a {
+    color: #0055a5;
+    text-decoration: none;
+}
+
+.hospital-info-bubble a:hover {
+    text-decoration: underline;
+}
+/* Container for the search bar */
+#search-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Search input */
+#search-input {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Search button */
+#search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #45a049;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Center the Form */
+.form-container, .signup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Input Styles */
+input[type="email"], 
+input[type="password"],
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+input[type="text"]:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Link Styles */
+p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container, .signup-container {
+        padding: 15px;
+    }
+
+    input[type="email"], 
+    input[type="password"],
+    input[type="text"],
+    button {
+        font-size: 14px;
+    }
+}
